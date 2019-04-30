@@ -2,6 +2,9 @@
 title: GAN
 date: 2019-04-30 15:13:56
 tags:
+categories:
+- awesome
+- AI
 ---
 # 综合
 ## 文章

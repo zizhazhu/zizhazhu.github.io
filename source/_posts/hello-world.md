@@ -9,5 +9,5 @@ Hello world!
 
 
 
-- My [awesome](awesome) list。
+- My [awesome](/awesome) list。
 

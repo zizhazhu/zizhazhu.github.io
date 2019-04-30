@@ -8,5 +8,5 @@ tags:
 ---
 ## AI
 
-- [GAN](awesome/AI/GAN)
+- [GAN](/awesome/AI/GAN)
 
