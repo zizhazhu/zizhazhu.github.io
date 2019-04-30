@@ -94,7 +94,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/hello-world/" data-id="cjv3ihd3q0005lwh7qtzfvn9k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/hello-world/" data-id="cjv3mxa5g0001xwh7xabvsnon" class="article-share-link">Share</a>
       
       
     </footer>
@@ -143,7 +143,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/awesome/AI/GAN/" data-id="cjv3ihd49000elwh7tlcwjvuy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/awesome/AI/GAN/" data-id="cjv3mxa6f000exwh7yuyy6gyr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -181,7 +181,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/notes/jekyll/" data-id="cjv3ihd47000dlwh7d3j8v3td" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/notes/jekyll/" data-id="cjv3mxa650006xwh7uuu5rrkv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -224,7 +224,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/awesome/" data-id="cjv3ihd370000lwh7sf4urm3l" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/awesome/" data-id="cjv3mxa4y0000xwh75auqp6vf" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/awesome/">awesome</a></li></ul>
@@ -262,11 +262,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="ARG"><a href="#ARG" class="headerlink" title="ARG"></a>ARG</h2><h3 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h3><p>在Dockerfile中<br><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ARG</span> &lt;name&gt;[=&lt;default value&gt;]</span><br></pre></td></tr></table></figure></p>
+<p>使用时形如${user:-some_user}，意思是如果变量不存在，默认值是-some_user。不用大括号应该也可以。</p>
+<p>在命令行通过–build-arg传入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker build --build-arg key=value .</span><br></pre></td></tr></table></figure>
+<p>在ARG之前使用变量会有warning，只有ARG后的变量引用才会读取命令行里的参数。</p>
+<h3 id="docker-compose"><a href="#docker-compose" class="headerlink" title="docker-compose"></a>docker-compose</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">build:</span></span><br><span class="line"><span class="attr">  context:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">  args:</span></span><br><span class="line">  	<span class="bullet">-</span> <span class="string">key=value</span></span><br></pre></td></tr></table></figure>
+<p>发现build可以直接是值，也可以是map。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/notes/docker/" data-id="cjv3ihd3y0006lwh7eif4vqzm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/notes/docker/" data-id="cjv3mxa660007xwh73w86odr2" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/notes/">notes</a></li></ul>
