@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Unknown
 subtitle:
 description:
 keywords:
-author: John Doe
+author: zizhazhu
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://zizhazhu.github.io
 root: /
 permalink: :title/
 permalink_defaults:
@@ -79,6 +79,6 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/zizhazhu/zizhazhu.github.io
+  repo: git@github.com:zizhazhu/zizhazhu.github.io.git
   name: zizhazhu
   email: zizhazhu@gmail.com
