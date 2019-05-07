@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Unknown">
 <meta property="og:description" content="前馈网络的目标是近似某个函数$f^*$ 前馈网络定义了一个映射$y=f(x;\theta)$，并且学习参数$\theta$，使它能够得到最佳的函数近似。 前馈的意思是模型中数据的流动是正向的没有反馈，和循环神经网络的概念相对。  f=x">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-07T10:14:15.516Z">
+<meta property="og:updated_time" content="2019-05-07T10:26:28.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深度学习 第六章 深度前馈网络">
 <meta name="twitter:description" content="前馈网络的目标是近似某个函数$f^*$ 前馈网络定义了一个映射$y=f(x;\theta)$，并且学习参数$\theta$，使它能够得到最佳的函数近似。 前馈的意思是模型中数据的流动是正向的没有反馈，和循环神经网络的概念相对。  f=x">
@@ -333,7 +333,7 @@
                 
               
 
-              <time title="创建时间：2019-05-07 17:22:46 / 修改时间：18:14:15" itemprop="dateCreated datePublished" datetime="2019-05-07T17:22:46+08:00">2019-05-07</time>
+              <time title="创建时间：2019-05-07 17:22:46 / 修改时间：18:26:28" itemprop="dateCreated datePublished" datetime="2019-05-07T17:22:46+08:00">2019-05-07</time>
             
 
             
@@ -685,7 +685,7 @@ f=x</script>
   
 
 
-  <script src="/js/next-boot.js?v=7.1.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script src="/js/next-boot.js?v=7.1.1"></script>
 
 
   
@@ -715,6 +715,46 @@ f=x</script>
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
   
 
 
