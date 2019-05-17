@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="前馈网络的目标是近似某个函数$f^*$ 前馈网络定义了一个映射$y=f(x;\theta)$，并且学习参数$\theta$，使它能够得到最佳的函数近似。 前馈的意思是模型中数据的流动是正向的没有反馈，和循环神经网络的概念相对。  f=x">
+  <meta name="description" content="前馈网络的目标是近似某个函数$f^*$。前馈网络定义了一个映射$y=f(x;\theta)$，并且学习参数$\theta$，使它能够得到最佳的函数近似。 前馈的意思是模型中数据的流动是正向的没有反馈，和包含反馈连接的循环神经网络的概念相对。 网络的意思是该模型可以被表示为一个由函数组成的有向无环图。 前馈网络的最后一层被称为输出层。训练数据为我们提供了在不同训练点上取值的、含有噪声的$f^*(x)">
 <meta name="keywords" content="notes,deep learning">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深度学习 第六章 深度前馈网络">
 <meta property="og:url" content="https://zizhazhu.github.io/notes/deep_learning/deep_learning_book/chapter6/index.html">
 <meta property="og:site_name" content="Unknown">
-<meta property="og:description" content="前馈网络的目标是近似某个函数$f^*$ 前馈网络定义了一个映射$y=f(x;\theta)$，并且学习参数$\theta$，使它能够得到最佳的函数近似。 前馈的意思是模型中数据的流动是正向的没有反馈，和循环神经网络的概念相对。  f=x">
+<meta property="og:description" content="前馈网络的目标是近似某个函数$f^*$。前馈网络定义了一个映射$y=f(x;\theta)$，并且学习参数$\theta$，使它能够得到最佳的函数近似。 前馈的意思是模型中数据的流动是正向的没有反馈，和包含反馈连接的循环神经网络的概念相对。 网络的意思是该模型可以被表示为一个由函数组成的有向无环图。 前馈网络的最后一层被称为输出层。训练数据为我们提供了在不同训练点上取值的、含有噪声的$f^*(x)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-07T10:26:28.935Z">
+<meta property="og:updated_time" content="2019-05-17T05:41:38.280Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深度学习 第六章 深度前馈网络">
-<meta name="twitter:description" content="前馈网络的目标是近似某个函数$f^*$ 前馈网络定义了一个映射$y=f(x;\theta)$，并且学习参数$\theta$，使它能够得到最佳的函数近似。 前馈的意思是模型中数据的流动是正向的没有反馈，和循环神经网络的概念相对。  f=x">
+<meta name="twitter:description" content="前馈网络的目标是近似某个函数$f^*$。前馈网络定义了一个映射$y=f(x;\theta)$，并且学习参数$\theta$，使它能够得到最佳的函数近似。 前馈的意思是模型中数据的流动是正向的没有反馈，和包含反馈连接的循环神经网络的概念相对。 网络的意思是该模型可以被表示为一个由函数组成的有向无环图。 前馈网络的最后一层被称为输出层。训练数据为我们提供了在不同训练点上取值的、含有噪声的$f^*(x)">
 
 
 
@@ -333,12 +333,24 @@
                 
               
 
-              <time title="创建时间：2019-05-07 17:22:46 / 修改时间：18:26:28" itemprop="dateCreated datePublished" datetime="2019-05-07T17:22:46+08:00">2019-05-07</time>
+              <time title="创建时间：2019-05-07 17:22:46" itemprop="dateCreated datePublished" datetime="2019-05-07T17:22:46+08:00">2019-05-07</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-17 13:41:38" itemprop="dateModified" datetime="2019-05-17T13:41:38+08:00">2019-05-17</time>
               
             
           </span>
@@ -372,11 +384,12 @@
       
 
       
-        <p>前馈网络的目标是近似某个函数$f^*$</p>
-<p>前馈网络定义了一个映射$y=f(x;\theta)$，并且学习参数$\theta$，使它能够得到最佳的函数近似。</p>
-<p>前馈的意思是模型中数据的流动是正向的没有反馈，和循环神经网络的概念相对。</p>
-<script type="math/tex; mode=display">
-f=x</script>
+        <p>前馈网络的目标是近似某个函数$f^*$。前馈网络定义了一个映射$y=f(x;\theta)$，并且学习参数$\theta$，使它能够得到最佳的函数近似。</p>
+<p>前馈的意思是模型中数据的流动是正向的没有反馈，和包含反馈连接的循环神经网络的概念相对。</p>
+<p>网络的意思是该模型可以被表示为一个由函数组成的有向无环图。</p>
+<p>前馈网络的最后一层被称为输出层。训练数据为我们提供了在不同训练点上取值的、含有噪声的$f^*(x)$的近似实例。</p>
+<p>这些网络被称为神经网络是因为它们受到了神经科学的启发。我们除了把每层想象成向量到向量的单个函数，也可以想象成许多并行操作的单元。每个单元接收一个向量，并给出一个标量，类似一个神经元。然而现代神经网络研究受到更多来自数学和工程学科的指引，而且目标也不是完美地给大脑建模，只是偶尔从我们了解的大脑中提取灵感。</p>
+
       
     </div>
 
