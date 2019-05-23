@@ -1,10 +1,14 @@
 ---
-title: GAN
+title: GAN Awesome
 date: 2019-04-30 15:13:56
 tags:
-categories:
 - awesome
-- AI
+- GAN
+- Deep Learning
+categories:
+- Computer
+- Deep Learning
+- GAN
 ---
 # 综合
 ## 文章

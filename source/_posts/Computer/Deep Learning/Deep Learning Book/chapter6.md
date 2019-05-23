@@ -2,9 +2,13 @@
 title: 深度学习 第六章 深度前馈网络
 date: 2019-05-07 17:22:46
 mathjax: true
+categories:
+- Computer
+- Deep Learning
+- Deep Learning Book
 tags:
-- notes
-- deep learning
+- Notes
+- Deep Learning
 
 ---
 
