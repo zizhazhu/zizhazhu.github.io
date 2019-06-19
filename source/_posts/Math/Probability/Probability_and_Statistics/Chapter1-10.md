@@ -48,4 +48,7 @@ Pr(\bigcup_{i=1}^n A_i) = &\sum_{i=1}^n Pr(A_i)-\sum_{i<j}Pr(A_i \cap A_j)+\sum_
 $$
 使用数学归纳法证明，找出$m$和$m+1$之间的差异项。
 
-除此之外，也可以利用事件的补的交集来快速计算，$Pr(\bigcup_{i=1}^n A_i)=1-Pr(\bigcap_{i=1}^n A_i^c)$。
+除此之外，也可以利用事件的补的交集来快速计算，
+$$
+Pr(\bigcup_{i=1}^n A_i) =1-Pr(\bigcap_{i=1}^n A_i^c )
+$$
