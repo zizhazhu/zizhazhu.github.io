@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Unknown">
 <meta property="og:description" content="联合事件的概率先考虑一系列互不相交的事件，  Pr(\bigcup_{i=1}^{n}A_i)=\sum_{i=1}^{n}Pr(A_i)也就是，这些事件的并的概率，就是直接把每个事件的概率加起来。 如果是任意两个事件，  Pr(A_1\cup A_2)=Pr(A_1)+Pr(A_2)-Pr(A_1 \cap A_2)三个事件直接地说公式就是，定理1.10.1：  \begin{split} Pr">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-19T06:47:41.794Z">
+<meta property="og:updated_time" content="2019-06-19T07:07:05.975Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Probability and Statistics Chapter 1-10 The Probability of a Union of Events">
 <meta name="twitter:description" content="联合事件的概率先考虑一系列互不相交的事件，  Pr(\bigcup_{i=1}^{n}A_i)=\sum_{i=1}^{n}Pr(A_i)也就是，这些事件的并的概率，就是直接把每个事件的概率加起来。 如果是任意两个事件，  Pr(A_1\cup A_2)=Pr(A_1)+Pr(A_2)-Pr(A_1 \cap A_2)三个事件直接地说公式就是，定理1.10.1：  \begin{split} Pr">
@@ -384,7 +384,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-06-19 14:47:41" itemprop="dateModified" datetime="2019-06-19T14:47:41+08:00">2019-06-19</time>
+                <time title="修改时间：2019-06-19 15:07:05" itemprop="dateModified" datetime="2019-06-19T15:07:05+08:00">2019-06-19</time>
               
             
           </span>
@@ -462,8 +462,9 @@ Pr(\bigcup_{i=1}^n A_i) = &\sum_{i=1}^n Pr(A_i)-\sum_{i<j}Pr(A_i \cap A_j)+\sum_
 &- \sum_{i<j<k<l}Pr(A_i \cap A_j \cap A_k \cap A_l) \\
 &+(-1)^{n+1}Pr(\bigcap_{i=1}^{n}A_i)
 \end{split}\tag{1.10.6}</script><p>使用数学归纳法证明，找出$m$和$m+1$之间的差异项。</p>
-<p>除此之外，也可以利用事件的补的交集来快速计算，$Pr(\bigcup<em>{i=1}^n A_i)=1-Pr(\bigcap</em>{i=1}^n A_i^c)$。</p>
-
+<p>除此之外，也可以利用事件的补的交集来快速计算，</p>
+<script type="math/tex; mode=display">
+Pr(\bigcup_{i=1}^n A_i) =1-Pr(\bigcap_{i=1}^n A_i^c )</script>
       
     </div>
 
